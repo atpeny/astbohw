@@ -20,7 +20,7 @@ jobs:
           
       - name: Running 
         run: |
-          curl -s "https://gist.githubusercontent.com/atpeny/014395f39d8bea4921827df5b35d506d/raw/5cd64dbdfc7b5c75db7fbaef94502a677dbda5cb/kaja.txt" | nuclei -silent -nc -ept ssl -attack-type pitchfork | tee Nuclei/result.$(date +%Y-%m-%d).txt
+          curl -s "https://gist.githubusercontent.com/atpeny/d1a863e1bb862c8b138d9d564eea7a3e/raw/8762c1a06d3068e413e7591c97a0bcc9fa112d93/londo.txt" | nuclei -silent -nc -ept ssl -attack-type pitchfork | tee Nuclei/result.$(date +%Y-%m-%d).txt
           
       - name: Set up Git user
         run: |
